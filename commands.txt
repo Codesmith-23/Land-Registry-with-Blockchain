@@ -1,0 +1,7 @@
+POWER SHELL(8):
+$env:PATH="D:\node18;" + $env:PATH
+$env:PATH = "D:\npm-global;" + $env:PATH
+
+
+CMD(18):
+set PATH=D:\node18;%PATH%

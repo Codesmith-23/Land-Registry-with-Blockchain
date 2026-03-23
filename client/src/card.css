@@ -1,0 +1,117 @@
+/* ==========================================================
+   DASHBOARD STAT CARDS — GovTech Clean Theme
+   Replaces old pink/purple/teal gradient cards
+   ========================================================== */
+
+.main-section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Legacy .dashbord class — now clean white cards */
+.dashbord {
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  background-color: var(--card-bg, #FFFFFF);
+  color: var(--text-primary, #0F172A);
+  border: 1px solid var(--border-color, #E2E8F0);
+  border-radius: var(--card-radius, 8px);
+  box-shadow: var(--card-shadow, 0 4px 6px -1px rgba(0, 0, 0, 0.05));
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.dashbord:hover {
+  box-shadow: var(--card-shadow-hover, 0 10px 15px -3px rgba(0, 0, 0, 0.08));
+  transform: translateY(-2px);
+}
+
+/* Icon section inside stat cards */
+.icon-section {
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.icon-section i {
+  font-size: 2.5rem;
+  padding: 12px;
+  border: 2px solid var(--primary-color, #2563EB);
+  border-radius: 50%;
+  margin-top: 0;
+  margin-bottom: 12px;
+  background-color: rgba(37, 99, 235, 0.08);
+  color: var(--primary-color, #2563EB);
+  display: inline-block;
+}
+
+.icon-section medium {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-secondary, #475569);
+}
+
+.icon-section p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: var(--primary-color, #2563EB);
+}
+
+/* Detail section footer strip */
+.detail-section {
+  background-color: rgba(37, 99, 235, 0.04);
+  padding: 8px 0;
+  font-size: 14px;
+  border-top: 1px solid var(--border-color, #E2E8F0);
+}
+
+.dashbord .detail-section:hover {
+  background-color: rgba(37, 99, 235, 0.08);
+  cursor: pointer;
+}
+
+.detail-section a {
+  color: var(--primary-color, #2563EB);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ==========================================================
+   COLOR VARIANT OVERRIDES
+   All variants now use the same clean blue theme
+   ========================================================== */
+
+.dashbord-orange .icon-section,
+.dashbord-orange .icon-section i {
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--primary-color, #2563EB);
+}
+
+.dashbord-orange .detail-section {
+  background-color: rgba(37, 99, 235, 0.04);
+}
+
+.dashbord-blue .icon-section,
+.dashbord-blue .icon-section i {
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--primary-color, #2563EB);
+}
+
+.dashbord-blue .detail-section {
+  background-color: rgba(37, 99, 235, 0.04);
+}
+
+.dashbord-skyblue .icon-section,
+.dashbord-skyblue .icon-section i {
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--primary-color, #2563EB);
+}
+
+.dashbord-skyblue .detail-section {
+  background-color: rgba(37, 99, 235, 0.04);
+}

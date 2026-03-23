@@ -1,0 +1,48 @@
+/* =========================================================
+   GOVTECH LAYOUT OVERRIDES (FIXES SQUEEZE & OVERLAP)
+   ========================================================= */
+
+/* 1. Lock the Sidebar to the left */
+.sidebar {
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 260px !important;
+  z-index: 1030;
+  background-color: #1A3C6E !important; /* Deep Navy Blue */
+}
+
+/* 2. Push the main pages to the right so they don't hide */
+.main-panel {
+  position: relative !important;
+  float: right !important;
+  width: calc(100% - 260px) !important; 
+  min-height: 100vh !important;
+  background-color: #F8FAFC !important; /* Clean Slate Background */
+}
+
+/* 3. Add breathing room to the content */
+.content {
+  padding: 40px 30px !important;
+  width: 100% !important;
+}
+
+/* 4. Fix the Tables (Stops Aadhar/PAN from squishing) */
+.table-responsive {
+  overflow-x: auto !important;
+  width: 100%;
+}
+
+.table th, .table td {
+  white-space: nowrap !important; /* Forces text to stay on one line */
+  padding: 12px 16px !important;
+}
+
+/* 5. Responsive / MetaMask Fix */
+@media (max-width: 991px) {
+  .main-panel {
+    width: 100% !important;
+    float: none !important;
+  }
+}

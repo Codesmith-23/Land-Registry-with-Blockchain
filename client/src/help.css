@@ -1,0 +1,121 @@
+/* ==========================================================
+   FAQ PAGE — GovTech Minimalist Theme
+   ========================================================== */
+
+.faq-wrapper {
+  padding: 2rem !important;
+  border: none !important;
+  border-radius: var(--card-radius) !important;
+}
+
+/* Header section with icon */
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.faq-header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(37, 99, 235, 0.08);
+  flex-shrink: 0;
+}
+
+.faq-header-icon i {
+  font-size: 1.4rem;
+  color: var(--primary-color) !important;
+}
+
+.faq-title {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin: 0 0 4px 0 !important;
+  letter-spacing: -0.01em;
+}
+
+.faq-subtitle {
+  font-size: 0.9rem !important;
+  color: var(--text-secondary) !important;
+  margin: 0 !important;
+  font-weight: 400;
+}
+
+/* FAQ content area */
+.faq-content {
+  padding: 0;
+}
+
+/* Style the react-faq-component rows */
+.faq-content .faq-row-wrapper {
+  background: transparent !important;
+}
+
+.faq-content .faq-row-wrapper .faq-title {
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Individual FAQ row styling */
+.faq-content .faq-row-wrapper .faq-body .faq-row {
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 0 !important;
+  transition: background-color 0.2s ease;
+}
+
+.faq-content .faq-row-wrapper .faq-body .faq-row:last-child {
+  border-bottom: none !important;
+}
+
+/* Question row title — clickable area */
+.faq-content .faq-row-wrapper .faq-body .faq-row .row-title {
+  padding: 1rem 0.75rem !important;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  font-weight: 600 !important;
+  color: #0F172A !important;
+  font-size: 1rem !important;
+}
+
+.faq-content .faq-row-wrapper .faq-body .faq-row .row-title:hover {
+  background-color: #F8FAFC !important;
+}
+
+/* Answer content — muted text */
+.faq-content .faq-row-wrapper .faq-body .faq-row .row-content {
+  color: #475569 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.7;
+  padding: 0 0.75rem 1rem 0.75rem !important;
+}
+
+.faq-content .faq-row-wrapper .faq-body .faq-row .row-content .row-content-text {
+  color: #475569 !important;
+}
+
+/* Links inside FAQ answers */
+.faq-content a {
+  color: var(--primary-color) !important;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.faq-content a:hover {
+  color: var(--primary-hover) !important;
+}
+
+/* Override the old help.css container styles */
+#container {
+  display: none;
+}
